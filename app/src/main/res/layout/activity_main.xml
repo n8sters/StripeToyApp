@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.natepowers.stripetoyapp.MainActivity">
+
+    <EditText
+        android:id="@+id/account_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="32dp"
+        android:inputType="number"
+        android:ems="10"
+        android:hint="Account Number"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/routing_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Routing Number"
+        app:layout_constraintLeft_toLeftOf="@+id/account_number"
+        app:layout_constraintTop_toBottomOf="@+id/account_number" />
+
+    <CheckBox
+        android:id="@+id/checking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="32dp"
+        android:text="Checking"
+        app:layout_constraintLeft_toLeftOf="@+id/routing_number"
+        app:layout_constraintTop_toBottomOf="@+id/routing_number" />
+
+    <CheckBox
+        android:id="@+id/savings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="24dp"
+        android:text="Savings"
+        app:layout_constraintLeft_toLeftOf="@+id/checking"
+        app:layout_constraintTop_toBottomOf="@+id/checking" />
+</android.support.constraint.ConstraintLayout>
